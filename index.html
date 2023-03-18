@@ -8,8 +8,20 @@
     <title>PizzaPlanet</title>
 </head>
 <body>
+   <main>
     <article>
         <div class="background">
+            <div>
+                <h1 class="maintext">Hi, My name is Astro</h1>
+                <h2 class="stardusttext">Yeahhh,  you collected all stars <br> Let's fly!</h2>
+            </div>
+
+            <div>
+                <img id="astropizza" src="Home/astro.png" alt="Background"> 
+            </div>
+
+            <div class="letsgobutton hideplanets">Let's gooo</div>
+
             <img id="backgrounddefault" src="Home/background.svg" alt="Background">
             <img id="blueplanet" src="Home/blueplanet.svg" alt="Blue Planet">
             <img id="redplanet" src="Home/redplanet.svg" alt="Red Planet">
@@ -34,35 +46,94 @@
         </div>
     </article>
 
-
-    
     <article class="meter showmeter">
+        <p class="clickstarstext">click on the stars to collect stardust, <br> so we can fly...</p>
         <div id="balk"></div>
         <div class="bar"></div>
         <div id="extrageel"></div>
         <img id="starmeter" src="Home/starmeter.svg" alt="Star meter">
     </article>
     
+    <article class="kiesuitdrie">
+
+        <h3>you choose, the ending.. <br> Fight or Deliver pizzaaaa?</h3>
+
+        <img id="orangeplanet" src="Home/orangeplanet.svg" alt="Random Planet">
+        <img id="littlemoon" src="Home/moon.svg" alt="Little moon">
+        <img id="astroufo" src="Home/ufoastro.svg" alt="Astro in ufo">
+        <img id="sadalien" src="Home/sadalien.svg" alt="Sad Alien">
+
+        <section class="buttons">
+            <div class="fightbutton showfightscherm">
+                <p>fight</p>
+                <img id="boxhandschoen" src="Home/fight.svg" alt="Fight">
+            </div>
+            <div class="deliverbutton">
+                <p>Deliver</p>
+                <img id="pizza" src="Home/pizza.svg" alt="Deliver pizza"> 
+            </div>
+        </section>
+    </article>
 
 
-    
+    <article class="deliverpizzatoalien">
+        <p class="dragtext hidedragtext">drag and drop <br> the pizzas to the alien</p>
+        <img class="vacuum" src="Home/vacuum.svg" alt="vacuum">
+        <img class="pizza showpizza" id="pizza1" src="Home/pizza.svg" alt="Pizza slice" draggable="true">
+        <img class="pizza showpizza" id="pizza2" src="Home/pizza.svg" alt="Pizza slice" draggable="true">
+        <img class="pizza showpizza" id="pizza3" src="Home/pizza.svg" alt="Pizza slice" draggable="true">
+        <img class="pizza showpizza" id="pizza4" src="Home/pizza.svg" alt="Pizza slice" draggable="true">
+        <img class="pizza showpizza" id="pizza5" src="Home/pizza.svg" alt="Pizza slice" draggable="true">
+    </article>
+
+    <secion class="endingpizza">
+        <h4>Misson complete</h4>
+        <p id="finalpizzatext">Yeah, Your Alien bestfriend is happy now</p>
+        <p id="pstext">Go home (the moon) and play again</p>
+    </secion>
+
+<article class="fightscherm hidefightscherm">
 
 
+    <img class="astrofight" src="Home/astro_fight_basic.svg" alt="Astro fight position">
+    <img class="alienfight" src="Home/alien_fight_basic.svg" alt="Alien fight position">
+    <img class="astrokick" src="Home/astro_kick.svg" alt="Astro kick">
+    <img class="astrohit" src="Home/astro_arm.svg" alt="Astro hit">
+    <img class="astroshoot" src="Home/astro_shoot.svg" alt="Astro shoot">
 
 
+    <section class="fight showfmeter">
+        <div id="fbalk"></div>
+        <div class="fbar"></div>
+        <div id="extrarood"></div>
+        <img id="hartmeter" src="Home/greenheart.svg" alt="Heart meter">
+    </section>
 
-    <div>
-        <img id="astropizza" src="Home/astro.png" alt="Background"> 
-    </div>
+    <section class="fbuttons">
+        <div class="kick">
+            <p>Kick</p>
+            <img id="kick" src="Home/kick.svg" alt="Kick">
+        </div>
+        <div class="hit">
+            <p>Hit</p>
+            <img id="hit" src="Home/fight.svg" alt="Hit">
+        </div>
+        <div class="shoot">
+            <p>Shoot</p>
+            <img id="shoot" src="Home/shoot.svg" alt="Shoot"> 
+        </div>
+        <div class="random">
+            <p>Random</p>
+            <img id="random" src="Home/random.svg" alt="Random"> 
+        </div>
+    </section>
 
-    <div>
-        <h1 class="maintext">Hi, My name is Astro</h1>
-        <h2 class="stardusttext">Yeahhh,  you collected all stars </h2>
-    </div>
+</article>
 
-    <div class="letsgobutton hideplanets">Let's gooo</div>
+
 
 
     <script src="pizza.js"></script>
+</main> 
 </body>
 </html>

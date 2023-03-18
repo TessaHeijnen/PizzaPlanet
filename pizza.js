@@ -1,4 +1,3 @@
-
 /* Tekst + button Home */
 var maintext = document.querySelector (".maintext");
 var letsgobutton = document.querySelector (".letsgobutton");
@@ -20,7 +19,13 @@ var metertotaal = document.querySelector (".meter");
 var ster = document.querySelectorAll(".star");
 var astrofly = document.querySelector (".astrofly");
 
+var tweedeArrayElementen = [metertotaal, astrofly, moon, miniufo,];
+console.log(tweedeArrayElementen);
+
+
 /* sterren verdwijnen */
+var clickstarstext = document.querySelector (".clickstarstext");
+/*
 var starround1 = document.querySelector ("#starround1");
 var starround2 = document.querySelector ("#starround2");
 var starround3 = document.querySelector ("#starround3");
@@ -63,8 +68,8 @@ star4.addEventListener("click", function() {
     star4.style.display = "none";
 });
 
+/* HOME SCHERM -----------------------------------------------------------------------*/
 
-/* Tekst home */
 setTimeout(function (){
     maintext.innerText = 'I Deliver Pizzas every lightyear,' 
 }, 2000)
@@ -79,27 +84,11 @@ setTimeout(function (){
 }, 6500)
 
 
-
-/* Bye alle planeten */
-letsgobutton.addEventListener("click", function(){
-    arrayElementen.forEach(element => {
-        element.classList.add('hideplanets');
-    });
-/* Hello stardust scherm elementen */    
-    ster.forEach(element => {
-        element.classList.remove('showstar');
-      });
-    metertotaal.classList.remove("showmeter");
-    astrofly.classList.remove("showastrofly");
-    maintext.innerText = '';
-})
-
-
-/* Astro eet pizza */
+/* Astro eet pizza  */    
 var astrostill = document.querySelector ("#astropizza");
 var astrostatus = 'uit';
 
-function lichtknop(){
+function gifplay(){
 
     if (astrostatus == 'aan'){
         astrostill.src = 'home/astro.png'
@@ -112,32 +101,299 @@ function lichtknop(){
     }
 }
 
-astrostill.addEventListener("mouseover", lichtknop);
+astrostill.addEventListener("mouseover", gifplay);
+
+
+/* STARDUST SCHERM -----------------------------------------------------------------------*/
+
+letsgobutton.addEventListener("click", function(){
+    arrayElementen.forEach(element => {
+        element.classList.add('hideplanets');
+    });
+/* nieuwe elementen tevoorschijn, stardust scherm  */    
+    ster.forEach(element => {
+        element.classList.remove('showstar');
+      });
+    metertotaal.classList.remove("showmeter");
+    astrofly.classList.remove("showastrofly");
+    maintext.innerText = '';
+
+/* tekst tevoorschijn, stardust scherm  */  
+    clickstarstext.classList.remove("hideclickstarstext");
+
+/* tekst verdwijnt  */  
+    setTimeout(function() {
+        clickstarstext.classList.add('hideclickstarstext');
+    }, 5000);
+})
+
+
+
+
+
+
+
+
+/* fight meter */
+var fbar = document.querySelector(".fbar");
+var hartmeter = document.querySelector("#hartmeter");
+var alienfight = document.querySelector(".alienfight");
+var abar = document.querySelector(".abar");
+
+
+/* Kick health down ---------------------------------------------------------------------*/
+var kick = document.querySelector(".kick");
+var astrofight = document.querySelector(".astrofight");
+var astrokick = document.querySelector(".astrokick");
+
+var fbarWidth = 26;
+var kickCount = 0;
+
+
+astrokick.classList.add("hid");
+
+function healthdownkick(){
+    astrofight.classList.add("hid");
+    astrokick.classList.remove("hid");
+    setTimeout(function() {
+        astrokick.classList.add("hid");
+    }, 400);
+    setTimeout(function() {
+        astrofight.classList.remove("hid");
+    }, 400);
+
+    fbarWidth -= 4; // verhoog de breedte van de fbar met 1
+    fbar.style.width = fbarWidth + "em"; // pas de breedte van de fbar aan
+
+    kickCount++;
+    if (kickCount >= 7) {
+        console.log("Gefeliciteerd, je hebt 7 keer geklikt!");
+        // voer hier de functionaliteit uit die je wilt na 7 klikken
+    }
+}
+
+
+kick.addEventListener('click', healthdownkick);
+console.log (kick);
+
+/* hit health down ---------------------------------------------------------------------*/
+var hit = document.querySelector(".hit");
+var astrohit = document.querySelector(".astrohit");
+
+var fbarWidth = 26;
+
+astrohit.classList.add("hid");
+
+function healthdownhit(){
+    astrohit.classList.remove("hid");
+    setTimeout(function() {
+        astrohit.classList.add("hid");
+    }, 400);
+
+    fbarWidth -= 4; // verhoog de breedte van de fbar met 1
+    fbar.style.width = fbarWidth + "em"; // pas de breedte van de fbar aan
+
+    kickCount++;
+    if (kickCount >= 7) {
+        console.log("Gefeliciteerd, je hebt 7 keer geklikt!");
+        // voer hier de functionaliteit uit die je wilt na 7 klikken
+    }
+}
+
+
+hit.addEventListener('click', healthdownhit);
+
+
+/* shooth health down ---------------------------------------------------------------------*/
+var astroshoot = document.querySelector(".astroshoot");
+var shoot = document.querySelector(".shoot");
+
+var fbarWidth = 26;
+
+astroshoot.classList.add("hid");
+
+function healthdownshoot(){
+    astrofight.classList.add("hid");
+    astroshoot.classList.remove("hid");
+    setTimeout(function() {
+        astroshoot.classList.add("hid");
+    }, 500);
+    setTimeout(function() {
+        astrofight.classList.remove("hid");
+    }, 500);
+
+    fbarWidth -= 4; // verhoog de breedte van de fbar met 1
+    fbar.style.width = fbarWidth + "em"; // pas de breedte van de fbar aan
+
+    kickCount++;
+    if (kickCount >= 7) {
+        console.log("Gefeliciteerd, je hebt 7 keer geklikt!");
+    }
+
+}
+
+shoot.addEventListener('click', healthdownshoot);
+
+/*-------------Random--------------------------------------------------------*/
+
+
+var random = document.querySelector(".random");
+console.log("klik op random");
+var fightArrayElementen = [healthdownkick, healthdownhit, healthdownshoot]
+
+function randomfight() {
+    var randomAttack = fightArrayElementen[Math.floor(Math.random() * fightArrayElementen.length)];
+    // Voer de gekozen functie uit
+    randomAttack();
+}
+random.addEventListener('click', randomfight);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Stardust meter */
 var bar = document.querySelector(".bar");
 var starmeter = document.querySelector("#starmeter");
 var stardusttext = document.querySelector("h2");
+var kiesuitdrie = document.querySelector(".kiesuitdrie");
 
 function steromhoog(){
     bar.style.height = bar.offsetHeight + 57.5 + "px";
     starmeter.style.height = starmeter.offsetHeight + 125 + "px";
-    console.log ("steromhoog + 100")
+    console.log ("steromhoog + 100");
 
+
+/* show missie behaald text */
     if (starmeter.offsetHeight >= 1300) {
         stardusttext.classList.remove("stardusttext");
 
+/*  missie behaald text verdwijnt */
         setTimeout(function (){
-            maintext.innerText = 'I Deliver Pizzas every lightyear,' 
             stardusttext.classList.add("stardusttext")
-        }, 2000)
-
+        }, 3000)
+/*  Collect stardust scherm, verdwijnt */
         setTimeout(function (){
-            maintext.innerText = 'so i can say hello to my alien bestfriends' 
-        }, 4000)
+            tweedeArrayElementen.forEach(function(element) {
+                element.classList.add('hidestardustscherm');
+/*  Alle elementen tevoorschijn, Kies scherm */
+                kiesuitdrie.classList.remove("kiesuitdrie");
+            });
+        }, 3000);
     }
+    
 }
 
 ster.forEach(element => {
-    element.addEventListener ('click', steromhoog);})
+    element.addEventListener ('click', steromhoog);
+});
+
+/* KIES SCHERM -----------------------------------------------------------------------*/
+
+/* Als je op de pizza button klikt...  */   
+var knoppen = document.querySelector(".buttons");
+var deliverbutton = document.querySelector(".deliverbutton");
+var kiestekst = document.querySelector("h3");
+var deliverpizzatoalien = document.querySelector(".deliverpizzatoalien");
+
+
+/* Gekozen voor: Pizza bezorgen -----------------------------------------------------------------------*/
+
+/* verdwijnen knoppen + start tekst */   
+deliverbutton.addEventListener("click", function() {
+    dragtext.classList.remove("hidedragtext");
+    knoppen.classList.add("hidebuttons");
+    kiestekst.classList.add("hidebuttons");
+    console.log (deliverbutton);
+
+/* pizza's en alien tevoorschijn */  
+    deliverpizzatoalien.classList.remove("deliverpizzatoalien");
+});
+
+/*  Pizza Deliver Drag and Drop */
+var vacuum = document.querySelector(".vacuum");
+var astroufo = document.querySelector("#astroufo");
+var alien = document.querySelector("#sadalien");
+
+var orangeplanet = document.querySelector("#orangeplanet");
+var littlemoon = document.querySelector("#littlemoon");
+  
+var pizzas = document.querySelectorAll(".pizza");
+var numPizzasDropped = 0;
+var pizza1 = document.querySelector("#pizza1");
+var pizza2 = document.querySelector("#pizza2");
+var pizza3 = document.querySelector("#pizza3");
+var pizza4 = document.querySelector("#pizza4");
+var pizza5 = document.querySelector("#pizza5");
+
+var dragtext = document.querySelector(".dragtext");
+var endingpizzatext = document.querySelector(".endingpizza");
+
+// Bron, item slepen en ergens droppen: https://www.youtube.com/watch?v=_G8G1OrEOrI + https://github.com/NikValdez/dragAndDrop //
+
+/*  Slepen */
+pizzas.forEach(element => {
+  element.addEventListener('dragstart', function(event) {
+    console.log(event)
+    event.target.classList.add('dragging');
+  });
+  
+/*  Verplaatsen */
+  alien.addEventListener('dragover', function(event) {
+    event.preventDefault();
+  });
+  
+/*  Droppen */
+  alien.addEventListener('drop', function(event) {
+    var pizza = document.querySelector('.pizza.dragging');
+    pizza.classList.remove('dragging'); 
+    
+    if (pizza === pizza1) {
+        pizza1.style.transform = 'translate(0em, 10em)';
+      } else if (pizza === pizza2) {
+        pizza2.style.transform = 'translate(22em, -3em)';
+      } else if (pizza === pizza3) {
+        pizza3.style.transform = 'translate(-24em, -12em)';
+      } else if (pizza === pizza4) {
+        pizza4.style.transform = 'translate(-1em, 23em)';
+      } else if (pizza === pizza5) {
+        pizza5.style.transform = 'translate(-4em, -5em)';
+      }
+
+    numPizzasDropped++;
+    if (numPizzasDropped === 5) {
+      alien.src = 'Home/happyalien.svg';
+      console.log("alle 5 pizza's zijn gedropt");
+      /*  Mission complete tekst laten zien */
+      endingpizzatext.classList.remove("endingpizza");
+    /*  instructie tekst verwijderen */    
+      dragtext.classList.add("hidedragtext");
+      /*  Opnieuw beginnen */    
+      littlemoon.addEventListener("click", function() {
+        location.reload();
+      });
+    }
+  });
+});
+
+/* FIGHT SCHERM -----------------------------------------------------------------------*/
+
+
+
+letsgobutton.addEventListener("click", function(){
+    clickstarstext.classList.remove("hideclickstarstext");
+})

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 427.28 411.27">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+        mix-blend-mode: multiply;
+      }
+
+      .cls-5 {
+        mask: url(#mask-1);
+      }
+    </style>
+    <filter id="luminosity-noclip" x="0" y="0" width="427.28" height="411.27" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-2" x="0" y="-8363.62" width="427.28" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="0" y="-8363.62" width="427.28" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient" x1="213.05" y1="403.34" x2="178.12" y2="-64.05" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="mask" x="0" y="0" width="427.28" height="411.27" maskUnits="userSpaceOnUse">
+      <g class="cls-2">
+        <g class="cls-5">
+          <path class="cls-4" d="m427.28,411.27H0L113.75,27.51l.05-.03c4.12-7.83,10.98-12.08,19.06-15.08,45.56-16.93,114.43-15.93,159.44-.61,8.11,2.76,17.99,8.71,20.81,17h0s114.16,382.49,114.16,382.49Z"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-2" x1="213.05" y1="403.34" x2="178.12" y2="-64.05" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd243"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g class="cls-1">
+      <path class="cls-3" d="m427.28,411.27H0L113.75,27.51l.05-.03c4.12-7.83,10.98-12.08,19.06-15.08,45.56-16.93,114.43-15.93,159.44-.61,8.11,2.76,17.99,8.71,20.81,17h0s114.16,382.49,114.16,382.49Z"/>
+    </g>
+  </g>
+</svg>
