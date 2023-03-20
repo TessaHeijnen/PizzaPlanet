@@ -3,53 +3,51 @@
   src: url("fonts/SPACEBOY.TTF");
 }
 
-
 /* HOME SCHERM --------------------------------------------------------*/
-/* Background Planets --------------------------------------------------------*/
 
 /* Space */
-.background img:first-of-type{
-    position: fixed;
-    margin: -10px;
-    z-index: -1;
-    overflow: hidden;
+.background img:first-of-type {
+  position: fixed;
+  margin: -10px;
+  z-index: -1;
+  overflow: hidden;
 }
 
 /* Blue planet */
-.background img:nth-of-type(2){
-    position: fixed;
-    width: 20%;
-    bottom: -15%;
-    left: 55%;
+.background img:nth-of-type(2) {
+  position: fixed;
+  width: 20%;
+  bottom: -15%;
+  left: 55%;
 }
 
-/* Blue planet Hover */ 
-.background img:nth-of-type(2):hover{
-    width: 21%;
-    transition: .20s ease-in-out;
+/* Blue planet Hover */
+.background img:nth-of-type(2):hover {
+  width: 21%;
+  transition: 0.2s ease-in-out;
 }
 
 /* Red planet */
-.background img:nth-of-type(3){
-    position: fixed;
-    width: 10%;
-    bottom: 20%;
-    right: 8%;
+.background img:nth-of-type(3) {
+  position: fixed;
+  width: 10%;
+  bottom: 20%;
+  right: 8%;
 }
 
 /* Red planet Hover */
-.background img:nth-of-type(3):hover{
-transform: rotate(360deg);
-transition: .8s ease-in;
+.background img:nth-of-type(3):hover {
+  transform: rotate(360deg);
+  transition: 0.8s ease-in;
 }
 
 /* The moon */
-.background img:nth-of-type(4){
-position: fixed;
-width: 25%;
-bottom: 15%;
-left: 10%;
-z-index: 1;
+.background img:nth-of-type(4) {
+  position: fixed;
+  width: 25%;
+  bottom: 15%;
+  left: 10%;
+  z-index: 1;
 }
 
 /* Aarde */
@@ -57,9 +55,9 @@ z-index: 1;
   animation: rotation 100s infinite linear;
 }
 
-#earth:hover{
+#earth:hover {
   filter: drop-shadow(20px 20px 20px #000072);
-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 @keyframes rotation {
@@ -71,74 +69,80 @@ transition: ease-in-out 0.5s;
   }
 }
 
-
 /* Mini ufo */
-.background img:nth-of-type(5){
+.background img:nth-of-type(5) {
   position: fixed;
   width: 5%;
   bottom: 11%;
-left: 14%;
-rotate: -15deg;
-z-index: 2;
+  left: 14%;
+  transform: rotate(-15deg);
+  z-index: 2;
 }
 
 /* Mini ufo hover */
-.background img:nth-of-type(5):hover{
+.background img:nth-of-type(5):hover {
   bottom: 5%;
-left: 9%;
-transition: ease-in-out 1s;
-z-index: 2;
+  left: 9%;
+  transition: ease-in-out 1s;
+  z-index: 2;
 }
 
 /* Saturnus */
-.background img:nth-of-type(6){
+.background img:nth-of-type(6) {
   position: fixed;
   width: 20%;
   top: 35%;
-right: 25%;
+  right: 25%;
 }
 
 /* Saturnus hover */
-.background img:nth-of-type(6):hover{
-rotate: 360deg;
-transition: 1s;
+.background img:nth-of-type(6):hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 /* Aarde */
-.background img:nth-of-type(7){
+.background img:nth-of-type(7) {
   position: fixed;
   width: 25%;
   bottom: 11%;
-right: -7%;
-top: -7%;
+  right: -7%;
+  top: -7%;
 }
 
-#astropizza{
-width: 10em;
-position: fixed;
-bottom: 24%;
-left: 20%;
-z-index: 2;
+#astropizza {
+  width: 10em;
+  position: fixed;
+  bottom: 24%;
+  left: 20%;
+  z-index: 2;
 }
-
 
 /* Teksten algemeen ---------------------------------------------------------------------------------*/
 
-h1, h2, h3, h4, .clickstarstext, .dragtext, #finalpizzatext, #pstext{
+h1,
+h2,
+h3,
+h4,
+.clickstarstext,
+.dragtext,
+#finalpizzatext,
+#pstext,
+#fighttext {
   margin: 0;
   position: fixed;
   left: 5%;
-    top: 10%;
-  padding-left: 1em; 
-    padding-right: 1em;
-    font-family: spaceboy;
-    font-size: 24px;
-    color: white;
-    text-shadow: 3px 3px #000000;
-    line-height: 1.8;
+  top: 10%;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: spaceboy;
+  font-size: 24px;
+  color: white;
+  text-shadow: 3px 3px #000000;
+  line-height: 1.8;
 }
 
-.hidetext{
+.hidetext {
   display: none;
 }
 
@@ -149,33 +153,32 @@ h1, h2, h3, h4, .clickstarstext, .dragtext, #finalpizzatext, #pstext{
 }
 
 /* Button -> stardustscherm */
-.letsgobutton{
+.letsgobutton {
   position: fixed;
   left: 7%;
   top: 18%;
   font-family: spaceboy;
   text-align: center;
-	display: inline-block;
+  display: inline-block;
   padding: 1em;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border-radius: 7px;
-  box-shadow: 0 0.3em #0086FF;
+  box-shadow: 0 0.3em #0086ff;
 }
 
-.letsgobutton:active{
-	box-shadow: none;
+.letsgobutton:active {
+  box-shadow: none;
   position: fixed;
   left: 7%;
   top: 18.4%;
   transition: ease-in-out 0.1s;
 }
 
-
 /* STARDUST SCHERM ---------------------------------------------------------------------------------------*/
 
-/* klik sterren -> na paar sec weg */
-.hideclickstarstext{
+/* klik sterren tekst -> na paar sec weg */
+.hideclickstarstext {
   opacity: 0;
   transition: opacity ease-out 1s;
 }
@@ -183,98 +186,97 @@ h1, h2, h3, h4, .clickstarstext, .dragtext, #finalpizzatext, #pstext{
 /* De sterren -----------------------------------------------------------------------*/
 
 /*sterren algemeen*/
-.star{
+.star {
   width: 1.5em;
-position: fixed;
+  position: fixed;
 }
 
 /*hover algemeen*/
-.star:hover{
+.star:hover {
   filter: drop-shadow(3px 5px 2px #000072);
 }
 
 /*show sterren*/
-.showstar{
+.showstar {
   display: none;
 }
 
 /*eigen positie*/
-#starround1{
+#starround1 {
   left: 10%;
   top: 20%;
   z-index: 1;
-width: 0.8em;
+  width: 0.8em;
 }
 
-#starround1:hover{
-width: 2em;
-transition: ease-in-out 0.5s;
+#starround1:hover {
+  width: 2em;
+  transition: ease-in-out 0.5s;
 }
 
-#starround2{
+#starround2 {
   left: 40%;
   top: 5%;
   width: 0.8em;
 }
 
-#starround3{
+#starround3 {
   left: 30%;
   top: 35%;
   z-index: 1;
-
 }
 
-#starround4{
+#starround4 {
   left: 5%;
   top: 90%;
   width: 0.8em;
 }
 
-#starround5{
+#starround5 {
   left: 70%;
   top: 50%;
 }
 
-#starround6{
+#starround6 {
   width: 0.8em;
   left: 78%;
   top: 28%;
 }
 
-#star1{
+#star1 {
   width: 4%;
   left: 80%;
-  top: 20%; 
+  top: 20%;
 }
 
-#star1:hover{
+#star1:hover {
   transform: rotate(360deg);
   transition: 2s;
 }
 
-#star2{
+#star2 {
   left: 50%;
-  top: 70%; 
+  top: 70%;
   z-index: 1;
 }
 
-#star2:hover{
+#star2:hover {
   transform: rotate(90deg);
   transition: 1s;
 }
 
-#star3{
+#star3 {
   left: 80%;
-  top: 85%; 
+  top: 85%;
 }
 
-#star4{
+#star4 {
   width: 4%;
   left: 5%;
-  top: 40%; 
+  top: 40%;
 }
 
-#star4:hover{
+#star4:hover {
   transform: skew(20deg);
   transition: 0.5s;
 }
@@ -282,7 +284,7 @@ transition: ease-in-out 0.5s;
 /* Stardust meter -----------------------------------------------------------------------*/
 
 /* grote balk */
-#balk{
+#balk {
   background-color: #ffffff;
   box-shadow: 10px 10px 10px #7373d3 inset;
   width: 2.5em;
@@ -294,27 +296,27 @@ transition: ease-in-out 0.5s;
 }
 
 /* achtergrond bar */
-.bar{
+.bar {
   width: 2.5em;
   height: 1em;
   border-radius: 50px;
   position: absolute;
   bottom: 3.8em;
-  background-color: #FFDA22;
+  background-color: #ffda22;
 }
 
 /* geel onderkant */
-#extrageel{
+#extrageel {
   position: absolute;
   bottom: 0.8em;
   border-radius: 50px;
   width: 2.5em;
   height: 5em;
-  background-color: #FFDA22;
+  background-color: #ffda22;
 }
 
 /* ster onderkant */
-#starmeter{
+#starmeter {
   width: 8em;
   height: auto;
   position: absolute;
@@ -322,10 +324,10 @@ transition: ease-in-out 0.5s;
 }
 
 /* 3 in 1 */
-.meter{
-  display: flex;      
-  flex-direction: column;     
-  align-items: center; 
+.meter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   width: 3em;
   left: 90%;
@@ -333,8 +335,310 @@ transition: ease-in-out 0.5s;
   z-index: -1;
 }
 
-/* METER ALIEN */
-.fight{
+/* show meter */
+.showmeter {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* afbeelding astro*/
+.astrofly {
+  width: 40%;
+  position: fixed;
+  bottom: 28%;
+  left: 17%;
+}
+
+.showastrofly {
+  display: none;
+}
+
+/* hide tekst: collected all stars.. */
+.stardusttext {
+  display: none;
+}
+
+/* hide hele stardust scherm (alle elementen) */
+.hidestardustscherm {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+/* KIES SCHERM --------------------------------------------------------------------------------------*/
+
+/* alle elementen Kiesscherm */
+.kiesuitdrie {
+  display: none;
+}
+
+#orangeplanet {
+  width: 105%;
+  position: fixed;
+  bottom: -10%;
+  left: -2%;
+}
+
+#littlemoon {
+  width: 10%;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+
+#astroufo {
+  width: 25%;
+  position: fixed;
+  bottom: 55%;
+  left: 38%;
+}
+
+/* tekst: you choose, the ending... */
+h3 {
+  left: 5%;
+  top: 60%;
+}
+
+/* Fight / Deliver buttons */
+.hidebuttons {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fightbutton {
+  position: fixed;
+  right: 4%;
+  top: 60%;
+  z-index: 1;
+}
+
+.deliverbutton {
+  position: fixed;
+  right: 4%;
+  top: 10%;
+  z-index: 1;
+}
+
+/* icons in button */
+#boxhandschoen {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#pizza {
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* als je op deliver button klikt */
+.showdeliverscherm {
+  display: none;
+  z-index: 1;
+}
+
+/* PIZZA DELIVER SCHERM -----------------------------------------------------------------------*/
+
+/* pizza's + vacuum */
+.deliverpizzatoalien {
+  display: none;
+}
+
+/* pizza algemeen */
+.pizza {
+  width: 5%;
+}
+
+#pizza1 {
+  position: fixed;
+  left: 40%;
+  bottom: 20%;
+}
+
+#pizza2 {
+  position: fixed;
+  left: 42%;
+  bottom: 35%;
+  transform: rotate(90deg);
+}
+
+#pizza3 {
+  position: fixed;
+  left: 48%;
+  bottom: 48%;
+  transform: rotate(240deg);
+}
+
+#pizza4 {
+  position: fixed;
+  left: 55%;
+  bottom: 35%;
+}
+
+#pizza5 {
+  position: fixed;
+  left: 56%;
+  bottom: 18%;
+  transform: rotate(130deg);
+}
+
+.vacuum {
+  width: 35%;
+  position: fixed;
+  left: 32.5%;
+  top: 35%;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+#sadalien {
+  width: 7%;
+  position: fixed;
+  bottom: 12%;
+  left: 47%;
+}
+
+/* tekst: mission complete... */
+h4,
+h5 {
+  font-size: 34px;
+  left: 34%;
+  top: 46%;
+  color: black;
+  text-shadow: 3px 3px #ffffff;
+  font-family: spaceboy;
+}
+
+h5 {
+  position: fixed;
+  left: 38%;
+  top: 10%;
+  text-shadow: 2px 2px #ffffff;
+}
+
+/* tekst: onder mission complete */
+#finalpizzatext,
+#finalfighttext {
+  left: 24%;
+  top: 52%;
+  color: black;
+  text-shadow: none;
+  font-family: spaceboy;
+}
+
+/* tekst: play again */
+#pstext,
+#pstextfight {
+  font-size: 14px;
+  left: 38%;
+  top: 60%;
+  color: black;
+  text-shadow: none;
+  font-family: spaceboy;
+}
+
+/* tekst mission complete, happy alien, play again */
+.endingpizza,
+.endingfight {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* tekst: instructie drag */
+.dragtext {
+  left: 5%;
+  top: 60%;
+}
+
+.hidedragtext {
+  display: none;
+}
+
+/* sad alien -> happy */
+.happy {
+  background-image: url("happyalien.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* FIGHT SCHERM -----------------------------------------------------------------------*/
+
+/* het hele fight scherm */
+.hidefight {
+  opacity: 0;
+  transition: opacity ease-out 1s;
+}
+
+/* enkele onderdelen */
+.hid {
+  display: none;
+}
+
+.hidefightscherm {
+  display: none;
+}
+
+/* Astro alle houdingen */
+.astrofight,
+.astrokick,
+.astrohit,
+.astroshoot,
+.winning {
+  position: fixed;
+  left: 53%;
+  bottom: 10%;
+  width: 10%;
+}
+
+/* Astro default */
+.astrofight {
+  width: 10%;
+}
+
+.hideastrofight {
+  opacity: 0;
+  transition: opacity ease-out 1s, transform ease-out 1s;
+}
+
+/* Einde gewonnen */
+.winning {
+  width: 20%;
+  left: 43%;
+}
+
+.astrokick {
+  width: 14%;
+  left: 50%;
+}
+
+.astrohit {
+  width: 8%;
+  left: 49%;
+  bottom: 12em;
+  z-index: -1;
+}
+
+.astroshoot {
+  width: 19%;
+  left: 46%;
+}
+
+/* Alien default */
+.alienfight {
+  width: 10%;
+  position: fixed;
+  left: 42%;
+  bottom: 11%;
+}
+
+/* meter alien */
+.fight {
   position: relative;
   width: 30em;
   left: 8%;
@@ -345,8 +649,8 @@ transition: ease-in-out 0.5s;
   align-items: center;
 }
 
-
-#fbalk{
+/* balk */
+#fbalk {
   background-color: #ffffff;
   box-shadow: 10px 10px 10px #7373d3 inset;
   width: 25em;
@@ -356,390 +660,183 @@ transition: ease-in-out 0.5s;
   position: absolute;
 }
 
-.fbar{
+/* health meter  */
+.fbar {
   width: 26.5em;
   height: 2.5em;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   position: absolute;
-  background-color: #62ED2E;;
+  background-color: #62ed2e;
   left: 2.5em;
   z-index: 0;
 }
 
-#hartmeter{
+/* hartje uiteinde balk */
+#hartmeter {
   position: absolute;
   width: 6em;
   right: 0;
 }
 
-
-/* show meter */
-.showmeter{
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-/* afbeelding astro*/
-.astrofly{
-  width:40%;
-  position: fixed;
-  bottom: 28%;
-  left: 17%;
-}
-
-.showastrofly{
-  display: none;
-}
-
-/* hide tekst: collected all stars.. */
-.stardusttext{
-  display: none;
-}
-
-/* hide hele stardust scherm (alle elementen) */
-.hidestardustscherm{
-  opacity: 0;
-  transition: opacity 0.8s ease;
-}
-
-
-/* KIES SCHERM --------------------------------------------------------------------------------------*/
-
-/* alle elementen Kiesscherm */
-.kiesuitdrie{
-  display: none;
-}
-
-#orangeplanet{
-  width: 105%;
-  position: fixed;
-  bottom: -10%;
-  left: -2%;
-}
-
-#littlemoon{
-width: 10%;
-position: fixed;
-top: 5%;
-left: 5%;
-}
-
-#astroufo{
-  width: 25%;
-  position: fixed;
-  bottom: 55%;
+/* Instructie fight tekst */
+#fighttext {
   left: 38%;
-}
-
-/* tekst: you choose... */
-h3{
-  left: 5%;
-  top: 60%;
-}
-
-/* Fight,Pizza buttons -----------------------------------------------------------------------*/
-
-.hidebuttons{
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.fightbutton{
-  position: fixed;
-  right: 4%;
   top: 10%;
-  z-index: 1;
+  text-align: center;
 }
 
-.showdeliverscherm{
-  display: none;
-  z-index: 1;
-}
-
-.deliverbutton{
+/* De gehele button*/
+.kick {
   position: fixed;
-  right: 4%;
-  top: 60%;
-  z-index: 1;
-}
-
-.kick{
-  position: fixed;
-  right: 40%;
+  left: 72%;
   top: 30%;
   z-index: 1;
 }
 
-.hit{
+.hit {
   position: fixed;
-  right: 20%;
+  left: 54%;
   top: 30%;
   z-index: 1;
 }
 
-.shoot{
+.shoot {
   position: fixed;
-  right: 60%;
+  left: 36%;
   top: 30%;
   z-index: 1;
 }
 
-.random{
+.random {
   position: fixed;
-  right: 80%;
+  left: 18%;
   top: 30%;
   z-index: 1;
 }
 
-
-
-.fightbutton, .deliverbutton, .kick, .hit, .shoot, .random {
-width: 8em;
-height: 8em;
-border-radius: 50%;
-padding: 1em;
-background-color: #ffffff;
-border: solid #000072 14px;
-box-shadow: 10px 10px 10px #7373d3 inset;
-z-index: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
+/* Ufo op planeet */
+#miniufolanding {
+  width: 18%;
+  transform: rotate(135deg);
+  position: fixed;
+  right: -5%;
+  bottom: -5%;
 }
 
-.fightbutton p, .kick p, .hit p{
+/* algemen opmaak button kies + fight scherm*/
+.fightbutton,
+.deliverbutton,
+.kick,
+.hit,
+.shoot,
+.random {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  padding: 1em;
+  background-color: #ffffff;
+  border: solid #000072 14px;
+  box-shadow: 10px 10px 10px #7373d3 inset;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* tekst in button */
+.fightbutton p,
+.kick p,
+.hit p,
+.shoot p,
+.random p {
   font-family: spaceboy;
   font-size: 1.8em;
   color: #000072;
-z-index: 1;
-visibility: hidden;
+  z-index: 1;
+  visibility: hidden;
 }
 
-.deliverbutton p{
+.random p {
+  font-size: 1.5em;
+}
+
+.deliverbutton p {
   font-family: spaceboy;
   font-size: 1.4em;
   line-height: 1.2;
   color: #000072;
-z-index: 1;
-visibility: hidden;
+  z-index: 1;
+  visibility: hidden;
 }
 
-
-.fightbutton:hover, .deliverbutton:hover{
+/* hover */
+.fightbutton:hover,
+.deliverbutton:hover,
+.kick:hover,
+.hit:hover,
+.shoot:hover,
+.random:hover {
   transform: scale(1.1);
   transition: ease-out 0.4s;
   box-shadow: none;
 }
 
-.fightbutton:hover #boxhandschoen, .deliverbutton:hover #pizza  {
-  display: none;
-  }
-
-.fightbutton:hover p, .deliverbutton:hover p {
-    visibility: visible;
-}
-
-#boxhandschoen{
-  width: 60%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-#pizza{
-  width: 55%;
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-#kick{
-  width: 60%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-#hit{
-  width: 60%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-
-
-
-
-/* PIZZA SCHERM -----------------------------------------------------------------------*/
-
-/* pizza's + vacuum */
-.deliverpizzatoalien{
+.fightbutton:hover #boxhandschoen,
+.deliverbutton:hover #pizza,
+.kick:hover #kick,
+.hit:hover #hit,
+.shoot:hover #shoot,
+.random:hover #random {
   display: none;
 }
 
-/* pizza algemeen */
-.pizza{
-  width: 5%;
+.fightbutton:hover p,
+.deliverbutton:hover p,
+.kick:hover p,
+.hit:hover p,
+.shoot:hover p,
+.random:hover p {
+  visibility: visible;
 }
 
-#pizza1{
-position: fixed;
-left:40%;
-bottom: 20%;
+/* icons in button */
+#kick,
+#hit,
+#shoot,
+#random {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-#pizza2{
+#random {
+  width: 70%;
+}
+
+#shoot {
+  width: 75%;
+  left: 53%;
+}
+
+/* tekst: onder mission complete */
+#finalfighttext {
+  font-size: 24px;
   position: fixed;
-  left:42%;
-  bottom: 35%;
-  rotate: 90deg;
-  }
-
-#pizza3{
-  position: fixed;
-  left:48%;
-  bottom: 48%;
-  rotate: 240deg;
-}
-
-#pizza4{
-  position: fixed;
-  left:55%;
-  bottom: 35%;
-}
-
-#pizza5{
-  position: fixed;
-  left:56%;
-  bottom: 18%;
-  rotate: -130deg;
-}
-  
-
-.vacuum{
-width: 35%;
-position: fixed;
-left:32.5%;
-top:35%;
-opacity: 0.8;
-z-index: -1;
-}
-
-#sadalien{
-  width: 7%;
-  position: fixed;
-  bottom: 12%;
-  left: 47%;
-}
-
-/* tekst: mission complete... */
-h4{
-  font-size: 34px;
-  left: 34%;
-  top: 46%;
-  color: black;
-  text-shadow: 3px 3px #ffffff;
-}
-
-/* tekst: pizza */
-#finalpizzatext{
-  left: 24%;
-  top: 52%;
-  color: black;
-  text-shadow: none;
+  left: 28%;
+  top: 20%;
 }
 
 /* tekst: play again */
-#pstext{
-  font-size: 14px;
-  left: 38%;
-  top: 60%;
-  color: black;
-  text-shadow: none;
-}
-
-/* tekst: instructie drag */
-.dragtext{
-  left: 5%;
-  top: 60%;
-}
-
-.hidedragtext{
-display: none;
-}
-
-/* tekst mission complete, happy alien, play again */
-.endingpizza{ 
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-/* happy/sad alien */
-.happy {
-  background-image: url('happyalien.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* FIGHT SCHERM -----------------------------------------------------------------------*/
-
-.hidefight{
-  display: none;
-}
-
-.hid{
-  display: none;
-}
-
-.hidefightscherm{
-  display: none;
-}
-
-
-/* Astro basic totaal */
-.astrofight, .astrokick,.astrohit, .astroshoot{
+#pstextfight {
   position: fixed;
-  left: 53%;
-  bottom: 10%;
-  width: 10%;
+  left: 35%;
+  top: 28%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 2;
 }
-
-.astrofight{
-  width: 10%;
-}
-.astrokick{
-  width: 14%;
-  left: 50%;
-}
-
-.astrohit{
-  width: 8%;
-  left: 49%;
-bottom: 12em;
-z-index: -1;
-}
-
-.astroshoot{
-  width: 19%;
-  left: 46%;
-}
-
-/* Alien basic */
-.alienfight{
-  width: 10%;
-  position: fixed;
-  left: 42%;
-  bottom: 11%;
-}
-
