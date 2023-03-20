@@ -31,7 +31,7 @@ console.log(tweedeArrayElementen);
 
 /* sterren verdwijnen */
 var clickstarstext = document.querySelector(".clickstarstext");
-/*
+
 var starround1 = document.querySelector ("#starround1");
 var starround2 = document.querySelector ("#starround2");
 var starround3 = document.querySelector ("#starround3");
