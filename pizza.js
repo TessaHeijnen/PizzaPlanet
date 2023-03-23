@@ -32,49 +32,51 @@ console.log(tweedeArrayElementen);
 /* sterren verdwijnen */
 var clickstarstext = document.querySelector(".clickstarstext");
 
-var starround1 = document.querySelector ("#starround1");
-var starround2 = document.querySelector ("#starround2");
-var starround3 = document.querySelector ("#starround3");
-var starround4 = document.querySelector ("#starround4");
-var starround5 = document.querySelector ("#starround5");
-var starround6 = document.querySelector ("#starround6");
-var star1 = document.querySelector ("#star1");
-var star2 = document.querySelector ("#star2");
-var star3 = document.querySelector ("#star3");
-var star4 = document.querySelector ("#star4");
+var starround1 = document.querySelector("#starround1");
+var starround2 = document.querySelector("#starround2");
+var starround3 = document.querySelector("#starround3");
+var starround4 = document.querySelector("#starround4");
+var starround5 = document.querySelector("#starround5");
+var starround6 = document.querySelector("#starround6");
+var star1 = document.querySelector("#star1");
+var star2 = document.querySelector("#star2");
+var star3 = document.querySelector("#star3");
+var star4 = document.querySelector("#star4");
 
-starround1.addEventListener("click", function() {
-    starround1.classList.add("showstar");
+starround1.addEventListener("click", function () {
+  starround1.classList.add("showstar");
 });
-starround2.addEventListener("click", function() {
-    starround2.classList.add("showstar");
+starround2.addEventListener("click", function () {
+  starround2.classList.add("showstar");
 });
-starround3.addEventListener("click", function() {
-    starround3.classList.add("showstar");
+starround3.addEventListener("click", function () {
+  starround3.classList.add("showstar");
 });
-starround4.addEventListener("click", function() {
-    starround4.classList.add("showstar");
+starround4.addEventListener("click", function () {
+  starround4.classList.add("showstar");
 });
-starround5.addEventListener("click", function() {
-    starround5.classList.add("showstar");
+starround5.addEventListener("click", function () {
+  starround5.classList.add("showstar");
 });
-starround6.addEventListener("click", function() {
-    starround6.classList.add("showstar");
+starround6.addEventListener("click", function () {
+  starround6.classList.add("showstar");
 });
-star1.addEventListener("click", function() {
-    star1.classList.add("showstar");
+star1.addEventListener("click", function () {
+  star1.classList.add("showstar");
 });
-star2.addEventListener("click", function() {
-    star2.classList.add("showstar");
+star2.addEventListener("click", function () {
+  star2.classList.add("showstar");
 });
-star3.addEventListener("click", function() {
-    star3.classList.add("showstar");
+star3.addEventListener("click", function () {
+  star3.classList.add("showstar");
 });
-star4.addEventListener("click", function() {
-    star4.classList.add("showstar");
+star4.addEventListener("click", function () {
+  star4.classList.add("showstar");
 });
 
 /* HOME SCHERM -----------------------------------------------------------------------*/
+
+// Bron: Evi //
 
 setTimeout(function () {
   maintext.innerText = "I Deliver Pizza's every lightyear,";
