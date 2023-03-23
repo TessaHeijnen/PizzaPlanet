@@ -5,7 +5,6 @@
 
 /* HOME SCHERM --------------------------------------------------------*/
 
-
 /* Space */
 .background img:first-of-type {
   position: fixed;
@@ -582,7 +581,7 @@ h5 {
 }
 
 .hidefightscherm {
-display: none;
+  display: none;
 }
 
 /* Astro alle houdingen */

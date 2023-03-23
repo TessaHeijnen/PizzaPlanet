@@ -1,3 +1,5 @@
+// Bron afbeeldingen: https://www.freepik.com/author/catalyststuff //
+
 /* Tekst + button Home */
 var maintext = document.querySelector(".maintext");
 var letsgobutton = document.querySelector(".letsgobutton");
@@ -130,6 +132,7 @@ letsgobutton.addEventListener("click", function () {
   }, 5000);
 });
 
+// Samen met Eric gedaan //
 /* Stardust meter */
 var bar = document.querySelector(".bar");
 var starmeter = document.querySelector("#starmeter");
@@ -420,6 +423,7 @@ function healthdownshoot() {
 }
 shoot.addEventListener("click", healthdownshoot);
 
+// Bron, regel 434: Chatopenai.
 /* Random kick, hit of shoot */
 var random = document.querySelector(".random");
 console.log("klik op random");
