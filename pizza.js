@@ -99,10 +99,10 @@ var astrostatus = "uit";
 
 function gifplay() {
   if (astrostatus == "aan") {
-    astrostill.src = "home/astro.png";
+    astrostill.src = "Home/astro.png";
     astrostatus = "uit";
   } else if (astrostatus == "uit") {
-    astrostill.src = "home/astro.gif";
+    astrostill.src = "Home/astro.gif";
     astrostatus = "aan";
   }
 }
